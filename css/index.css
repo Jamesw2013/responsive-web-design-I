@@ -283,25 +283,28 @@ h1, h2, h3, h4, h5 {
             align-content: center;
         }
 
-        div.text-content-a, div.text-content-b, div.text-content-0, div.text-content-1, div.text-content-2 {
+        div.top-content div.text-content-a, div.top-content div.text-content-b, div.bottom-content div.text-content-0, div.bottom-content div.text-content-1,
+        div.bottom-content div.text-content-2 {
+            width: 100%;
             display: flex;
-            flex-basis: 500px auto;
-            justify-content: center;
-            align-items: stretch;
+            flex-flow: row wrap;
+            justify-content: flex-start;
             padding: 10px 0 10px 0;
             margin: 0px;
-            border: 1px solid gray;
         }
 
+        
         section.main-content {
             border-bottom: 1px solid black;
         }
 
         section.contact {
+            width: 100%;
             display: flex;
-            flex-flow: column wrap;
-            justify-content: space-between;
-            align-content: flex-start;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            padding: 10px 0 10px 0;
+            margin: 0px;
         }
 
         footer {
