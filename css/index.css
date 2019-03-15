@@ -93,7 +93,10 @@ h1, h2, h3, h4, h5 {
 		margin-bottom: 3.13%;
     }
     @media(max-width: 800px){
-        heaser nav {
+        header {
+            align-items: center;
+        }
+        header nav {
             display: flex;
             justify-content: space-evenly;
             width: 70%;
@@ -114,7 +117,9 @@ h1, h2, h3, h4, h5 {
 
         header img.logo {
             display: flex;
-            flex-wrap: wrap-reverse
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            align-items: center;
         }
     }
 /* /header */
